@@ -58,6 +58,32 @@
                </graphic>
             </Button>
          </children></AnchorPane>
-      <AnchorPane layoutX="75.0" prefHeight="405.0" prefWidth="570.0" />
+      <AnchorPane layoutX="75.0" prefHeight="405.0" prefWidth="570.0">
+         <children>
+            <MenuBar layoutY="-1.0" prefHeight="30.0" prefWidth="570.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Pasajeros">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Close" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Pilotos">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Trabajadores">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Vuelos">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+              </menus>
+            </MenuBar>
+         </children></AnchorPane>
    </children>
 </AnchorPane>
