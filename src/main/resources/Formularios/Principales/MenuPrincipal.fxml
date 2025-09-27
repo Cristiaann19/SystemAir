@@ -58,6 +58,9 @@
                </graphic>
             </Button>
          </children></AnchorPane>
-      <AnchorPane layoutX="75.0" prefHeight="405.0" prefWidth="570.0" />
+      <AnchorPane layoutX="75.0" prefHeight="405.0" prefWidth="570.0">
+         <children>
+            <AnchorPane prefHeight="411.0" prefWidth="570.0" />
+         </children></AnchorPane>
    </children>
 </AnchorPane>

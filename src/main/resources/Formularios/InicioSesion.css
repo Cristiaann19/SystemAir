@@ -1,0 +1,30 @@
+.login-bg{
+    -fx-background-color: linear-gradient(to bottom right, #141E30, #243B55);
+}
+
+.text-field{
+    -fx-background-color:transparent;
+    -fx-border-color:#327bc9;
+    -fx-border-width: 0px 0px 3px 0px;
+    -fx-padding: 3px 3px 3px 25px;
+    -fx-text-inner-color: #fff; 
+}
+
+.button{
+    -fx-background-color:#327bc9;
+    -fx-cursor:hand;
+}
+
+.button:hover{
+    -fx-background-color:#5aa0ea;
+}
+
+.hyper-text{
+    -fx-text-fill:#5aa0ea;
+}
+.exit{
+    -fx-background-color:transparent;
+}
+.exit:hover{
+    -fx-background-color:transparent;
+}

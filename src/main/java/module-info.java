@@ -9,6 +9,7 @@ module com.demo.systemair {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens Clases to javafx.fxml;
     exports Clases;
+    opens Forms to javafx.fxml;
+    exports Forms;
 }
