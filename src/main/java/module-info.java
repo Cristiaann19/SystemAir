@@ -8,6 +8,8 @@ module com.demo.systemair {
     requires net.synedra.validatorfx;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires javafx.graphics;
+    requires javafx.base;
 
     exports Clases;
     opens Forms to javafx.fxml;
