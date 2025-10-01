@@ -50,6 +50,11 @@
                   <Image url="@../../icons/botonamarillo.png" />
                </image>
             </ImageView>
+            <Label fx:id="LblReloj" layoutX="76.0" layoutY="365.0" prefHeight="42.0" prefWidth="117.0" text="00:00:00" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic Bold" size="28.0" />
+               </font>
+            </Label>
          </children></AnchorPane>
       <AnchorPane layoutX="280.0" prefHeight="650.0" prefWidth="820.0" styleClass="nav-form" stylesheets="@../MenuPrincipal.css">
          <children>
@@ -78,7 +83,7 @@
                       </Menu>
                       <Menu mnemonicParsing="false" text="Reports">
                         <items>
-                          <MenuItem mnemonicParsing="false" text="Reportes" />
+                          <MenuItem mnemonicParsing="false" onAction="#CReportes" text="Reportes" />
                         </items>
                       </Menu>
                     </menus>

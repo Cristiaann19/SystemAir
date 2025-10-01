@@ -38,7 +38,4 @@ public class AppSystem extends Application {
         primaryStage.show();
 
     }
-
-
-
 }

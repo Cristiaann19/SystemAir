@@ -1,22 +1,28 @@
 package Forms;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import javafx.util.Duration;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 public class formSystemAirP {
     @FXML private Button CloseWindow;
     @FXML private Button MinimizeWindow;
     @FXML private Button btnLogout;
     @FXML private AnchorPane anchorPaneMain;
-
+    @FXML private Label LblReloj;
 
     //PARA CERRAR LA VENTANA
     @FXML
@@ -62,7 +68,23 @@ public class formSystemAirP {
     @FXML
     private void initialize() throws IOException{
         formularioBienvenida();
+        iniciarReloj();
     }
+
+    //METODO PARA EL RELOJ
+    private void iniciarReloj(){
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("HH:mm:ss");
+
+        Timeline timeline = new Timeline(
+                new KeyFrame(Duration.seconds(1), e -> {
+                    String hora = LocalTime.now().format(formato);
+                    LblReloj.setText(hora);
+                })
+        );
+        timeline.setCycleCount(Timeline.INDEFINITE);
+        timeline.play();
+    }
+
 
     //CARGA DE LOS FORMULARIOS
     @FXML
@@ -78,6 +100,11 @@ public class formSystemAirP {
     @FXML
     private void CGestionPilotos() throws IOException{
         cargarFormulario("/Formularios/Gestion/GestionPilotos.fxml");
+    }
+
+    @FXML
+    private void CReportes() throws IOException{
+        cargarFormulario("/Formularios/Reportes/Reportes.fxml");
     }
 
 }
