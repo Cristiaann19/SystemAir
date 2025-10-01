@@ -5,15 +5,15 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="573.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Forms.formPasajero" fx:id="anchorPaneMain">
+<AnchorPane fx:id="anchorPaneMain" prefHeight="620.0" prefWidth="820.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Forms.formPasajero">
    <children>
-      <AnchorPane prefHeight="547.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane prefHeight="620.0" prefWidth="820.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane layoutX="14.0" layoutY="38.0" prefHeight="256.0" prefWidth="770.0" styleClass="bg-white" stylesheets="@../Gestiones.css">
+            <AnchorPane layoutX="16.0" layoutY="38.0" prefHeight="277.0" prefWidth="787.0" styleClass="bg-white" stylesheets="@../Gestiones.css">
                <children>
-                  <TableView layoutX="6.0" layoutY="42.0" prefHeight="208.0" prefWidth="759.0">
+                  <TableView layoutX="6.0" layoutY="42.0" prefHeight="212.0" prefWidth="770.0">
                     <columns>
-                      <TableColumn prefWidth="57.19997978210449" text="Codigo" />
+                      <TableColumn prefWidth="57.19997978210449" text="DNI" />
                       <TableColumn prefWidth="127.20001983642578" text="Nombres" />
                         <TableColumn prefWidth="145.0" text="Apellidos" />
                         <TableColumn prefWidth="79.0" text="Origen" />
@@ -29,30 +29,30 @@
                      </image>
                   </ImageView>
                   <TextField layoutX="34.0" layoutY="5.0" prefHeight="26.0" prefWidth="192.0" promptText="Buscar..." />
-                  <MenuButton layoutX="677.0" layoutY="5.0" mnemonicParsing="false" text="Selecciona">
+                  <MenuButton layoutX="685.0" layoutY="5.0" mnemonicParsing="false" text="Selecciona">
                     <items>
                       <MenuItem mnemonicParsing="false" text="Action 1" />
                       <MenuItem mnemonicParsing="false" text="Action 2" />
                     </items>
                   </MenuButton>
-                  <Label layoutX="623.0" layoutY="10.0" text="Destino:">
+                  <Label layoutX="631.0" layoutY="10.0" text="Destino:">
                      <font>
                         <Font name="Century Gothic" size="13.0" />
                      </font>
                   </Label>
-                  <MenuButton layoutX="528.0" layoutY="5.0" mnemonicParsing="false" text="Selecciona">
+                  <MenuButton layoutX="536.0" layoutY="5.0" mnemonicParsing="false" text="Selecciona">
                      <items>
                         <MenuItem mnemonicParsing="false" text="Action 1" />
                         <MenuItem mnemonicParsing="false" text="Action 2" />
                      </items>
                   </MenuButton>
-                  <Label layoutX="474.0" layoutY="10.0" text="Origen:">
+                  <Label layoutX="482.0" layoutY="10.0" text="Origen:">
                      <font>
                         <Font name="Century Gothic" size="13.0" />
                      </font>
                   </Label>
                </children></AnchorPane>
-            <AnchorPane layoutX="15.0" layoutY="301.0" prefHeight="263.0" prefWidth="770.0" styleClass="bg-white" stylesheets="@../Gestiones.css">
+            <AnchorPane layoutX="16.0" layoutY="326.0" prefHeight="266.0" prefWidth="787.0" styleClass="bg-white" stylesheets="@../Gestiones.css">
                <children>
                   <Label layoutX="12.0" layoutY="8.0" text="Agregar o Modificar Pasajero">
                      <font>
@@ -89,10 +89,11 @@
                   </Label>
                   <TextField layoutX="100.0" layoutY="151.0" prefHeight="26.0" prefWidth="154.0" />
                </children></AnchorPane>
-            <Button layoutX="14.0" layoutY="6.0" onAction="#MGestionPasajeros" mnemonicParsing="false" text="Pasajeros" />
-            <Button layoutX="90.0" layoutY="6.0" onAction="#MGestionPilotos" mnemonicParsing="false"  text="Pilotos" />
-            <Button layoutX="153.0" layoutY="6.0" mnemonicParsing="false" text="Trabajadores" />
-            <Button layoutX="249.0" layoutY="6.0" mnemonicParsing="false" text="Aviones" />
+            <Label layoutX="16.0" layoutY="10.0" text="GESTION PASAJERO - AIRPORT SYSTEM">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+            </Label>
          </children>
       </AnchorPane>
    </children>

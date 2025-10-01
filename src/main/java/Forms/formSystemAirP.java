@@ -12,18 +12,11 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class formSystemAirP {
-    @FXML
-    private Button CloseWindow;
-    @FXML
-    private Button MinimizeWindow;
-    @FXML
-    private Button btnLogout;
-    @FXML
-    private AnchorPane anchorPaneMain;
+    @FXML private Button CloseWindow;
+    @FXML private Button MinimizeWindow;
+    @FXML private Button btnLogout;
+    @FXML private AnchorPane anchorPaneMain;
 
-
-    public formSystemAirP() {
-    }
 
     //PARA CERRAR LA VENTANA
     @FXML
@@ -55,13 +48,8 @@ public class formSystemAirP {
         }
     }
 
-    @FXML
-    private void initialize() throws IOException{
-        formularioBienvenida();
-    }
-
     //PARA INICIAR EL FORMULARIO
-    public void CargarFormulario(String rutaFXML) throws IOException{
+    private void cargarFormulario(String rutaFXML) throws IOException{
         FXMLLoader loader = new FXMLLoader(getClass().getResource(rutaFXML));
         Parent root = loader.load();
         anchorPaneMain.getChildren().setAll(root);
@@ -71,16 +59,25 @@ public class formSystemAirP {
         anchorPaneMain.setRightAnchor(root, 0.0);
     }
 
+    @FXML
+    private void initialize() throws IOException{
+        formularioBienvenida();
+    }
+
     //CARGA DE LOS FORMULARIOS
     @FXML
     private void formularioBienvenida() throws IOException{
-        CargarFormulario("/Formularios/Principales/Welcome.fxml");
+        cargarFormulario("/Formularios/Principales/Welcome.fxml");
     }
 
+    //METODOS PARA CARGAR LOS PANELES DE GESTION
     @FXML
-    private void FormularioGestionPasajeros()throws IOException{
-        CargarFormulario("/Formularios/Gestion/GestionPasajeros.fxml");
+    private void CGestionPasajeros() throws IOException{
+        cargarFormulario("/Formularios/Gestion/GestionPasajeros.fxml");
     }
-
+    @FXML
+    private void CGestionPilotos() throws IOException{
+        cargarFormulario("/Formularios/Gestion/GestionPilotos.fxml");
+    }
 
 }

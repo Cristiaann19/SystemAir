@@ -7,9 +7,9 @@
 
 <AnchorPane prefHeight="610.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Forms.formLogin">
    <children>
-      <AnchorPane prefHeight="610.0" prefWidth="1000.0" styleClass="login-bg" stylesheets="@../InicioSesion.css">
+      <AnchorPane prefHeight="650.0" prefWidth="1100.0" styleClass="login-bg" stylesheets="@../InicioSesion.css">
          <children>
-            <AnchorPane layoutX="-1.0" prefHeight="610.0" prefWidth="580.0">
+            <AnchorPane layoutX="-1.0" prefHeight="650.0" prefWidth="600.0">
                <children>
                   <ImageView fitHeight="297.0" fitWidth="454.0" layoutX="103.0" layoutY="104.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -22,43 +22,43 @@
                      </font>
                   </Label>
                </children></AnchorPane>
-            <AnchorPane layoutX="580.0" layoutY="-1.0" prefHeight="610.0" prefWidth="420.0">
+            <AnchorPane layoutX="600.0" prefHeight="650.0" prefWidth="500.0">
                <children>
-                  <TextField fx:id="txtUsername" layoutX="113.0" layoutY="335.0" promptText="Username" styleClass="text-field" stylesheets="@../InicioSesion.css">
+                  <TextField fx:id="txtUsername" layoutX="151.0" layoutY="352.0" promptText="Username" styleClass="text-field" stylesheets="@../InicioSesion.css">
                      <font>
                         <Font name="Microsoft Sans Serif" size="15.0" />
                      </font></TextField>
-                  <PasswordField fx:id="txtPassword" layoutX="113.0" layoutY="392.0" prefHeight="27.0" prefWidth="198.0" promptText="Password">
+                  <PasswordField fx:id="txtPassword" layoutX="151.0" layoutY="409.0" prefHeight="27.0" prefWidth="198.0" promptText="Password">
                      <font>
                         <Font name="Microsoft Sans Serif" size="15.0" />
                      </font></PasswordField>
-                  <Button fx:id="btnLogin" layoutX="160.0" layoutY="453.0" mnemonicParsing="false" onAction="#Login" prefHeight="40.0" prefWidth="99.0" stylesheets="@../InicioSesion.css" text="Iniciar" textFill="WHITE">
+                  <Button fx:id="btnLogin" layoutX="198.0" layoutY="470.0" mnemonicParsing="false" onAction="#Login" prefHeight="40.0" prefWidth="99.0" stylesheets="@../InicioSesion.css" text="Iniciar" textFill="WHITE">
                      <font>
                         <Font name="Berlin Sans FB" size="18.0" />
                      </font></Button>
-                  <Label layoutX="128.0" layoutY="277.0" text="Iniciar Sesión" textFill="#327bc9">
+                  <Label layoutX="166.0" layoutY="294.0" text="Iniciar Sesión" textFill="#327bc9">
                      <font>
                         <Font name="Berlin Sans FB" size="32.0" />
                      </font></Label>
-                  <Hyperlink layoutX="172.0" layoutY="517.0" styleClass="hyper-text" stylesheets="@../InicioSesion.css" text="Visitanos en:" />
-                  <ImageView fitHeight="192.0" fitWidth="183.0" layoutX="120.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+                  <Hyperlink layoutX="210.0" layoutY="534.0" styleClass="hyper-text" stylesheets="@../InicioSesion.css" text="Visitanos en:" />
+                  <ImageView fitHeight="192.0" fitWidth="183.0" layoutX="158.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../icons/varios-usuarios.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="113.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="151.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../icons/user-solid.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="112.0" layoutY="397.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="17.0" fitWidth="19.0" layoutX="150.0" layoutY="409.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@../../icons/lock.png" />
                      </image>
                   </ImageView>
-                  <Button fx:id="CloseWindow" layoutX="352.0" layoutY="14.0" mnemonicParsing="false" onAction="#CloserWindow" prefHeight="50.0" prefWidth="51.0" styleClass="exit" stylesheets="@../InicioSesion.css">
+                  <Button fx:id="CloseWindow" layoutX="460.0" mnemonicParsing="false" onAction="#CloserWindow" prefHeight="36.0" prefWidth="37.0" styleClass="exit" stylesheets="@../InicioSesion.css">
                      <graphic>
-                        <ImageView fitHeight="48.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="23.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../icons/cross_14875490.png" />
                            </image>

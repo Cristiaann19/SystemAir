@@ -33,8 +33,7 @@
 }
 
 .logout{
-    -fx-background-color:#0550a5;
-    -fx-background-radius:20px;
+    -fx-background-color: #0f3b6f;
     -fx-cursor:hand;
 }
 
