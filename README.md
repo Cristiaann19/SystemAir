@@ -28,12 +28,12 @@ El sistema permite gestionar pasajeros, pilotos, trabajadores, aviones, vuelos, 
 ## 🛠️ Tecnologías utilizadas
 - **JavaFX** → interfaz gráfica.
 - **Scene Builder** → diseño de las vistas (FXML).
-- **CSS** → estilos personalizados (modo oscuro/claro).
+- **CSS** → estilos personalizados .
 - **FontAwesomeFX** → íconos modernos para botones y menús.
-- **MySQL / SQL Server** (según configuración) → base de datos.
-- **JasperReports (opcional)** → para reportes avanzados en PDF.
+- **MySQL / SQL Server** → base de datos.
+- **JasperReports** → para reportes avanzados en PDF.
 
 ---
 
 ## 📂 Estructura del proyecto
-
+- **Coming soon**
