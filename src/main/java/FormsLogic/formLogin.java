@@ -1,6 +1,5 @@
-package Forms;
+package FormsLogic;
 
-import com.almasb.fxgl.entity.action.Action;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -37,7 +36,7 @@ public class formLogin {
         Stage stageAactual = (Stage) btnLogin.getScene().getWindow();
         stageAactual.close();
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Formularios/Principales/MenuPrincipal.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Forms/MainFiles/MainMenu.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             stageAactual.setScene(scene);

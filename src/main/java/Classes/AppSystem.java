@@ -1,4 +1,4 @@
-package Clases;
+package Classes;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,7 +15,7 @@ public class AppSystem extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("/Formularios/Principales/Login.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/Forms/MainFiles/Login.fxml"));
 
         Scene scene = new Scene(root);
         root.setOnMousePressed((MouseEvent event) -> {

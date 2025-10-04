@@ -1,0 +1,79 @@
+
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width: .4px .4px .2px .4px;
+}
+
+.semi-top-form{
+    -fx-background-color:#efefef;
+    -fx-border-color:#000;
+    -fx-border-width: .2px .4px .4px .4px;
+}
+
+.exit{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.minize{
+    -fx-background-color:transparent;
+    -fx-cursor:hand;
+}
+.nav-form{
+    -fx-background-color: linear-gradient(to bottom right, #24385c, #0b3b72);
+}
+
+.logout{
+    -fx-background-color: #0f3b6f;
+    -fx-cursor:hand;
+}
+
+.logout:hover{
+    -fx-background-color:#096fe3;
+}
+
+
+/*--- ESTILOS PARA EL ACORDEON ---*/
+.accordion {
+    -fx-background-color: transparent;
+}
+
+.titled-pane > .title {
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(255, 255, 255, 0.1);
+    -fx-border-width: 0 0 1 0;
+}
+
+.titled-pane > .title > .text {
+    -fx-fill: #FFFFFF !important;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 16px;
+}
+
+.titled-pane > .title > .arrow-button > .arrow {
+    -fx-background-color: white;
+}
+
+.titled-pane:focused > .title {
+    -fx-background-color: transparent;
+}
+
+.titled-pane > .content {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.botones_box{
+    -fx-background-color: transparent;
+    -fx-cursor:hand;
+    -fx-alignment: center-left;
+    -fx-text-fill: #fff;
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 14px;
+    -fx-pref-width: 200px;
+}
+
+.botones_box:hover{
+    -fx-background-color: #096fe3;
+}

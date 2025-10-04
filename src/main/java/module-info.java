@@ -11,7 +11,7 @@ module com.demo.systemair {
     requires javafx.graphics;
     requires javafx.base;
 
-    exports Clases;
-    opens Forms to javafx.fxml;
-    exports Forms;
+    exports Classes;
+    opens FormsLogic to javafx.fxml;
+    exports FormsLogic;
 }

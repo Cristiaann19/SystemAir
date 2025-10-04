@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Forms.formSystemAirP">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FormsLogic.formSystemAirP">
    <children>
       <AnchorPane prefHeight="650.0" prefWidth="280.0" styleClass="nav-form" stylesheets="@../MenuPrincipal.css">
          <children>
@@ -50,54 +50,47 @@
                   <Image url="@../../icons/botonamarillo.png" />
                </image>
             </ImageView>
-            <Label fx:id="LblReloj" layoutX="76.0" layoutY="365.0" prefHeight="42.0" prefWidth="117.0" text="00:00:00" textFill="WHITE">
+            <Label fx:id="LblReloj" layoutX="76.0" layoutY="269.0" prefHeight="42.0" prefWidth="117.0" text="00:00:00" textFill="WHITE">
                <font>
                   <Font name="Century Gothic Bold" size="28.0" />
                </font>
             </Label>
+            <Accordion layoutX="33.0" layoutY="325.0" styleClass="accordeon" stylesheets="@../MenuPrincipal.css">
+              <panes>
+                <TitledPane animated="false" prefHeight="176.0" prefWidth="141.0" stylesheets="@../MenuPrincipal.css" text="Gestion">
+                  <content>
+                      <VBox alignment="CENTER_LEFT" spacing="5" stylesheets="@../MenuPrincipal.css">
+                          <Button onAction="#CGestionPasajeros" styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Pasajeros" />
+                          <Button onAction="#CGestionPilotos" styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Pilotos" />
+                          <Button styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Trabajadores" />
+                          <Button styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Aviones" />
+                      </VBox>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" prefHeight="27.0" prefWidth="213.0" text="Vuelos">
+                  <content>
+                      <VBox alignment="CENTER_LEFT" spacing="5">
+                          <Button styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Lista de Vuelos" />
+                      </VBox>
+                  </content>
+                </TitledPane>
+                <TitledPane animated="false" prefHeight="29.0" prefWidth="202.0" text="Reportes">
+                  <content>
+                      <VBox alignment="CENTER_LEFT" spacing="5">
+                          <Button onAction="#CReportes" styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Reportes" />
+                      </VBox>
+                  </content>
+                </TitledPane>
+              </panes>
+            </Accordion>
          </children></AnchorPane>
       <AnchorPane layoutX="280.0" prefHeight="650.0" prefWidth="820.0" styleClass="nav-form" stylesheets="@../MenuPrincipal.css">
          <children>
-            <AnchorPane prefHeight="27.0" prefWidth="820.0">
+            <AnchorPane prefHeight="27.0" prefWidth="820.0" visible="false" />
+            <AnchorPane fx:id="anchorPaneMain" layoutY="29.0" prefHeight="620.0" prefWidth="820.0" />
+            <AnchorPane prefHeight="30.0" prefWidth="820.0" style="-fx-background-color: white;">
                <children>
-                  <MenuBar prefHeight="30.0" prefWidth="820.0">
-                    <menus>
-                      <Menu mnemonicParsing="false" text="Gestiones +">
-                        <items>
-                          <MenuItem mnemonicParsing="false" onAction="#CGestionPasajeros" text="Pasajeros" />
-                        </items>
-                          <items>
-                              <MenuItem mnemonicParsing="false" onAction="#CGestionPilotos" text="Pilotos" />
-                          </items>
-                          <items>
-                              <MenuItem mnemonicParsing="false" text="Trabajadores" />
-                          </items>
-                          <items>
-                              <MenuItem mnemonicParsing="false" text="Aviones" />
-                          </items>
-                      </Menu>
-                      <Menu mnemonicParsing="false" text="Gestion Aviones">
-                        <items>
-                          <MenuItem mnemonicParsing="false" text="Aviones" />
-                        </items>
-                      </Menu>
-                      <Menu mnemonicParsing="false" text="Reports">
-                        <items>
-                          <MenuItem mnemonicParsing="false" onAction="#CReportes" text="Reportes" />
-                        </items>
-                      </Menu>
-                    </menus>
-                  </MenuBar>
-                  <Button fx:id="CloseWindow" layoutX="781.0" layoutY="-2.0" mnemonicParsing="false" onAction="#CloserWindow" prefHeight="22.0" prefWidth="14.0" styleClass="exit" stylesheets="@../MenuPrincipal.css">
-                     <graphic>
-                        <ImageView fitHeight="22.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../icons/cross_14875490.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button fx:id="MinimizeWindow" layoutX="742.0" layoutY="-2.0" mnemonicParsing="false" onAction="#Minimizer" prefHeight="22.0" prefWidth="14.0" styleClass="minize" stylesheets="@../MenuPrincipal.css">
+                  <Button fx:id="MinimizeWindow" layoutX="742.0" layoutY="3.0" mnemonicParsing="false" onAction="#Minimizer" prefHeight="22.0" prefWidth="14.0" styleClass="minize" stylesheets="@../MenuPrincipal.css">
                      <graphic>
                         <ImageView fitHeight="22.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -106,9 +99,22 @@
                         </ImageView>
                      </graphic>
                   </Button>
+                  <Button fx:id="CloseWindow" layoutX="781.0" layoutY="3.0" mnemonicParsing="false" onAction="#CloserWindow" prefHeight="22.0" prefWidth="14.0" styleClass="exit" stylesheets="@../MenuPrincipal.css">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../icons/cross_14875490.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Label layoutX="14.0" layoutY="7.0" text="AYRPORT SYSTEM">
+                     <font>
+                        <Font name="Century Gothic Bold" size="16.0" />
+                     </font>
+                  </Label>
                </children>
             </AnchorPane>
-            <AnchorPane fx:id="anchorPaneMain" layoutY="29.0" prefHeight="620.0" prefWidth="820.0" />
          </children></AnchorPane>
    </children>
 </Pane>

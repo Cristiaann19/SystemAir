@@ -1,4 +1,4 @@
-package Forms;
+package FormsLogic;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -44,7 +44,7 @@ public class formSystemAirP {
         Stage stageAactual = (Stage) btnLogout.getScene().getWindow();
         stageAactual.close();
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Formularios/Principales/Login.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/Forms/MainFiles/Login.fxml"));
             Parent root = loader.load();
             Scene scene = new Scene(root);
             stageAactual.setScene(scene);
@@ -89,22 +89,22 @@ public class formSystemAirP {
     //CARGA DE LOS FORMULARIOS
     @FXML
     private void formularioBienvenida() throws IOException{
-        cargarFormulario("/Formularios/Principales/Welcome.fxml");
+        cargarFormulario("/Forms/MainFiles/Welcome.fxml");
     }
 
     //METODOS PARA CARGAR LOS PANELES DE GESTION
     @FXML
     private void CGestionPasajeros() throws IOException{
-        cargarFormulario("/Formularios/Gestion/GestionPasajeros.fxml");
+        cargarFormulario("/Forms/Management/MPassenger.fxml");
     }
     @FXML
     private void CGestionPilotos() throws IOException{
-        cargarFormulario("/Formularios/Gestion/GestionPilotos.fxml");
+        cargarFormulario("/Forms/Management/MPilots.fxml");
     }
 
     @FXML
     private void CReportes() throws IOException{
-        cargarFormulario("/Formularios/Reportes/Reportes.fxml");
+        cargarFormulario("/Forms/Reports/Report.fxml");
     }
 
 }
