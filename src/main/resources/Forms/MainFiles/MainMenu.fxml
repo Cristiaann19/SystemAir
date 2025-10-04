@@ -60,9 +60,9 @@
                 <TitledPane animated="false" prefHeight="176.0" prefWidth="141.0" stylesheets="@../MenuPrincipal.css" text="Gestion">
                   <content>
                       <VBox alignment="CENTER_LEFT" spacing="5" stylesheets="@../MenuPrincipal.css">
-                          <Button onAction="#CGestionPasajeros" styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Pasajeros" />
-                          <Button onAction="#CGestionPilotos" styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Pilotos" />
-                          <Button styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Trabajadores" />
+                          <Button onAction="#CPassenger" styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Pasajeros" />
+                          <Button onAction="#CPilots" styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Pilotos" />
+                          <Button onAction="#CEmployee" styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Trabajadores" />
                           <Button styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Gestion Aviones" />
                       </VBox>
                   </content>
@@ -77,7 +77,7 @@
                 <TitledPane animated="false" prefHeight="29.0" prefWidth="202.0" text="Reportes">
                   <content>
                       <VBox alignment="CENTER_LEFT" spacing="5">
-                          <Button onAction="#CReportes" styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Reportes" />
+                          <Button onAction="#CReports" styleClass="botones_box" stylesheets="@../MenuPrincipal.css" text="Reportes" />
                       </VBox>
                   </content>
                 </TitledPane>

@@ -94,17 +94,22 @@ public class formSystemAirP {
 
     //METODOS PARA CARGAR LOS PANELES DE GESTION
     @FXML
-    private void CGestionPasajeros() throws IOException{
+    private void CPassenger() throws IOException{
         cargarFormulario("/Forms/Management/MPassenger.fxml");
     }
     @FXML
-    private void CGestionPilotos() throws IOException{
+    private void CPilots() throws IOException{
         cargarFormulario("/Forms/Management/MPilots.fxml");
     }
 
     @FXML
-    private void CReportes() throws IOException{
+    private void CReports() throws IOException{
         cargarFormulario("/Forms/Reports/Report.fxml");
+    }
+
+    @FXML
+    private void CEmployee()throws IOException{
+        cargarFormulario("/Forms/Management/MEmployee.fxml");
     }
 
 }
