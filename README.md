@@ -1,7 +1,7 @@
 # ✈️ AirPlane System - Sistema de Vuelos en JavaFX
 
-Este es un **sistema de gestión de vuelos** desarrollado en **JavaFX**, con el objetivo de simular la administración de una aerolínea.  
-El sistema permite gestionar pasajeros, pilotos, trabajadores, aviones, vuelos, pagos y generar reportes, diferenciando entre **rol de administrador** y **rol de cliente**.  
+This **airport system** is developed with **JavaFX**, with the objective of **simulating** the management of an airline.
+The system allows to manage **passengers, pilots, workers, airplanes, flights, payments and generate reports**, differentiating between **administrator** role and **customer** role.
 
 ---
 
