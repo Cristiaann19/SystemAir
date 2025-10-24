@@ -17,6 +17,8 @@ public class AppSystem extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/Forms/MainFiles/Login.fxml"));
 
+
+        
         Scene scene = new Scene(root);
         root.setOnMousePressed((MouseEvent event) -> {
            x = event.getSceneX();
